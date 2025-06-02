@@ -29,7 +29,7 @@ Media Catcher is a modern, user-friendly GUI application built on top of yt-dlp 
 ### Option 1: Install from Snap Store (Linux)
 ```bash
 # Coming soon after approval
-snap install media-catcher --classic
+snap install media-catcher
 ```
 
 ### Option 2: Run from Source
