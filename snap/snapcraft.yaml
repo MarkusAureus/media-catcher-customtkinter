@@ -1,0 +1,48 @@
+name: media-catcher
+base: core22
+version: '1.0.2'
+summary: Download videos and audio from YouTube and other platforms
+description: |
+  Media Catcher is a modern GUI application for downloading videos and audio
+  from YouTube and other platforms.
+
+grade: stable
+confinement: strict
+
+apps:
+  media-catcher:
+    command: media-catcher-launch
+
+parts:
+  everything:
+    plugin: dump
+    source: .
+    build-packages:
+      - python3-pip
+      - python3-tk
+    stage-packages:
+      - python3
+      - python3-tk
+      - python3-pip
+      - ffmpeg
+    override-build: |
+      # Install Python packages
+      pip3 install customtkinter packaging yt-dlp
+      
+      # Copy files
+      cp -r * $CRAFT_PART_INSTALL/
+      
+      # Create launch script
+      cat > $CRAFT_PART_INSTALL/media-catcher-launch << 'EOF'
+      #!/usr/bin/env python3
+      import sys
+      import os
+      
+      # Add snap directory to Python path
+      snap_dir = os.path.dirname(os.path.abspath(__file__))
+      sys.path.insert(0, snap_dir)
+      
+      # Import and run the main application
+      import media_catcher
+      EOF
+      chmod +x $CRAFT_PART_INSTALL/media-catcher-launch
