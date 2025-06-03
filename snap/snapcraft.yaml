@@ -1,6 +1,6 @@
 name: media-catcher
 base: core22
-version: '1.0.1'
+version: '1.0.3'
 summary: Modern GUI application for downloading videos and audio from online platforms
 description: |
   Media Catcher is a modern GUI application for downloading videos and audio from
