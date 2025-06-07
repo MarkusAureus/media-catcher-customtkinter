@@ -15,6 +15,12 @@ Media Catcher is a modern, user-friendly GUI application built on top of yt-dlp 
 - **Custom Output Folder** - Save downloads to any location.
 - **Built with CustomTkinter** - Modern, responsive interface.
 
+## 📱 Screenshot
+![](screenshot_1.png)
+![](screenshot_2.png)
+![](screenshot_3.png)
+![](screenshot_4.png)
+
 ## 📋 Requirements
 
 - Python 3.10+
