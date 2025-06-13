@@ -1,11 +1,3 @@
-# -----------------------------------------------------------------------------
-# -- MEDIA CATCHER - A CUSTOMTKINTER-BASED YT-DLP FRONTEND                   --
-# -- Author: Markus Aureus                                                   --
-# -- Date: [Date of Last Edit]                                               --
-# -- Description: A modern-looking desktop application for downloading media --
-# --              using yt-dlp. Built with CustomTkinter for a themed UI.    --
-# -----------------------------------------------------------------------------
-
 # --- Standard Library Imports ---
 import customtkinter as ctk
 import subprocess
