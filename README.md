@@ -165,10 +165,3 @@ This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.t
 
 This tool is for educational purposes and personal use only. Please respect copyright laws and the terms of service of the websites you download from. Only download content you have permission to download.
 
-## 📧 Contact
-
-For issues, questions, or suggestions, please open an issue on GitHub or contact via the Snapcraft Store page.
-
----
-
-Made with ❤️ by [Marek Kožuch]
